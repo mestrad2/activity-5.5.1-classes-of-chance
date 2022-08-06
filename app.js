@@ -20,6 +20,10 @@ class Casino {
 
         
     }
+
+    rollDie(side) {
+        console.log(Math.floor(Math.random() * side) + 1);
+    }
 };
 
 /* TESTS
@@ -31,20 +35,20 @@ myCasino.playGame(25);
 myCasino.playGame(35); */
 
 // BONUS TESTS
-
-const myBonusCasino = new Casino("HackerU Bonus Casino", false);
+/*
+const myBonusCasino = new Casino("HackerU Bonus Casino", true);
 console.log(myBonusCasino);
 myBonusCasino.playGame(5);
 myBonusCasino.playGame(15);
 myBonusCasino.playGame(25);
 myBonusCasino.playGame(35);
-
+*/
 
 // Extra BONUS TESTS
-/*
+
 const myExtraBonusCasino = new Casino("HackerU Extra Bonus Casino", false);
 console.log(myExtraBonusCasino);
 myExtraBonusCasino.rollDie(6);
 myExtraBonusCasino.rollDie(20);
 myExtraBonusCasino.rollDie(100);
-*/
+
